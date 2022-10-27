@@ -1,0 +1,17 @@
+{
+    "name": "bjelline/image-stamper",
+    "description": "web-project to get an image from the web and stamp it with current date",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brigitte Jellinek",
+            "email": "brigitte.jellinek@fh-salzburg.ac.at"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "imagine/imagine": "^1.3"
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>lootbox</title>
+  </head>
+
+  <body>
+
+    <input onclick="gamble()" id="game" name="kiste" type="image" src="https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Kiste.png"/>
+
+
+    <script>
+      document.getElementById("game").addEventListener("mouseover", hoverenter);
+      document.getElementById("game").addEventListener("mouseout", hoverexit);
+      var counter = 0;
+      function gamble(){
+        
+      var min = 0;
+      var max = 10;
+      var x = Math.floor(Math.random() * (max - min)) + min;
+      
+        if(counter %2 ==0){
+
+          switch(x){
+            case 0:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Gutis_Bundeslade.png";
+            counter++;
+            break;
+            case 1:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Gutis_Christus.png";
+            counter++;
+            break;
+            case 2:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Gutis_Essen.png";
+            counter++;
+            break;
+            case 3:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Gutis_Klopapier.png";
+            counter++;
+            break;
+            case 4:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Gutis_Socken.png";
+            counter++;
+            break;
+            case 5:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Schlechtis_Chips.png";
+            counter++;
+            break;
+            case 6:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Schlechtis_EinHauchVonTüll.png";
+            counter++;
+            break;
+            case 7:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Schlechtis_Socke.png";
+            counter++;
+            break;
+            case 8:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Schlechtis_Zwerg.png";
+            counter++;
+            break;
+            case 9:
+            document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Button_Schlechtis_Aubergine.png";
+            counter++;
+            break;
+           
+        }
+
+        }
+        else{
+          document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Kiste_leucht.png";
+          counter++;
+        }
+
+        
+      }
+
+      function hoverenter(){
+        document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Kiste_leucht.png";
+
+      }
+
+      function hoverexit(){
+        document.getElementById("game").src = "https://hello.gasser-bastian.at/leefoamu/2022/06/ZZ_Kiste.png";
+
+      }
+
+
+    </script>
+   
+  </body>
+</html>

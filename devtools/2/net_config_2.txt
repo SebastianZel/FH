@@ -1,0 +1,33 @@
+Windows-IP-Konfiguration
+
+
+Ethernet-Adapter VirtualBox Host-Only Network:
+
+   Verbindungsspezifisches DNS-Suffix:
+   Verbindungslokale IPv6-Adresse  . : fe80::4828:cb03:334:e7fa%14
+   IPv4-Adresse  . . . . . . . . . . : 192.168.56.1
+   Subnetzmaske  . . . . . . . . . . : 255.255.255.0
+   Standardgateway . . . . . . . . . :
+
+Drahtlos-LAN-Adapter LAN-Verbindung* 1:
+
+   Medienstatus. . . . . . . . . . . : Medium getrennt
+   Verbindungsspezifisches DNS-Suffix:
+
+Drahtlos-LAN-Adapter LAN-Verbindung* 2:
+
+   Medienstatus. . . . . . . . . . . : Medium getrennt
+   Verbindungsspezifisches DNS-Suffix:
+
+Drahtlos-LAN-Adapter WLAN:
+
+   Verbindungsspezifisches DNS-Suffix:
+   Verbindungslokale IPv6-Adresse  . : fe80::4cac:9f06:263d:b971%6
+   IPv4-Adresse  . . . . . . . . . . : 78.104.171.108
+   Subnetzmaske  . . . . . . . . . . : 255.255.254.0
+   Standardgateway . . . . . . . . . : 78.104.170.1
+
+Ethernet-Adapter Bluetooth-Netzwerkverbindung:
+
+   Medienstatus. . . . . . . . . . . : Medium getrennt
+   Verbindungsspezifisches DNS-Suffix:

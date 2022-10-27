@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/advent-pro-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+      url('fonts/advent-pro-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('fonts/advent-pro-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('fonts/advent-pro-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+      url('fonts/advent-pro-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('fonts/advent-pro-v11-latin-regular.svg#AdventPro') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/open-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('fonts/open-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/open-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/open-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/open-sans-v18-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/open-sans-v18-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('fonts/open-sans-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/open-sans-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/open-sans-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('fonts/open-sans-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/open-sans-v18-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4 {
+  font-family: 'Advent Pro', sans-serif;
+}
+body { background-image: url(images/lakeside-700.jpg); background-size: cover; }
+@media only screen and (min-width: 700px) and (min-resolution: 2dppx) {
+  body { background-image: url(images/lakeside-1500.jpg); }
+}
+@media only screen and (min-width: 1500px) {
+  body { background-image: url(images/lakeside-1500.jpg); }
+}
+@media only screen and (min-width: 1500px) and (min-resolution: 2dppx) {
+  body { background-image: url(images/lakeside-3000.jpg); }
+}
+@media only screen and (min-width: 3000px) {
+  body { background-image: url(images/lakeside-3000.jpg); }
+}
+
+@media only screen and (min-width: 500px) {
+  nav ul {
+    display: flex;
+    height: 16px;
+    line-height: 16px;
+  }
+}
+
+body {
+  --background-color: rgba(255,255,255,0.9);
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+a:link {
+  color: #135bad;
+}
+a:visited {
+  color: #8913ad;
+}
+main {
+  flex: 1;
+  padding: 15px;
+  color: white;
+}
+
+.overlay {
+  background-color: white;
+  color: black;
+  max-width: 600px;
+  padding: 2em;
+  box-shadow: 5px 5px 5px 0px #e3b25f;
+}
+
+footer {
+  background-color: var(--background-color);
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  margin-top: 30px;
+}
+
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  padding: 10px;
+  color: rgba(117, 117, 117, 1);
+  background-color: var(--background-color);
+}
+nav ul li {
+  cursor: pointer;
+  margin-right: 10px;
+}
+nav ul li:first-child {
+  font-weight: bold;
+}
+nav ul li a:any-link {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- seite images.php ------------- */
+
+div.bilder {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.bilder div {
+  width: 320px;
+  height: 400px;
+  padding: 5px;
+}
+div.bilder img {
+  width: 300px;
+  height: 202px;
+}

@@ -1,0 +1,16 @@
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\bin\Debug\net5.0\U6.exe
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\bin\Debug\net5.0\U6.deps.json
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\bin\Debug\net5.0\U6.runtimeconfig.json
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\bin\Debug\net5.0\U6.runtimeconfig.dev.json
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\bin\Debug\net5.0\U6.dll
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\bin\Debug\net5.0\ref\U6.dll
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\bin\Debug\net5.0\U6.pdb
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\obj\Debug\net5.0\U6.csproj.AssemblyReference.cache
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\obj\Debug\net5.0\U6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\obj\Debug\net5.0\U6.AssemblyInfoInputs.cache
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\obj\Debug\net5.0\U6.AssemblyInfo.cs
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\obj\Debug\net5.0\U6.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\obj\Debug\net5.0\U6.dll
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\obj\Debug\net5.0\ref\U6.dll
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\obj\Debug\net5.0\U6.pdb
+C:\Users\Sebastian\Desktop\dev\semester 2\Zelnicek_Sebastian_algodat\U6\obj\Debug\net5.0\U6.genruntimeconfig.cache

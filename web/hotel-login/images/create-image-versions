@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cp $1.jpg $1-300.jpg; mogrify -geometry 300x $1-300.jpg
+cp $1.jpg $1-700.jpg; mogrify -geometry 700x $1-700.jpg
+cp $1.jpg $1-1500.jpg; mogrify -geometry 1500x $1-1500.jpg
+cp $1.jpg $1-3000.jpg; mogrify -geometry 3000x $1-3000.jpg

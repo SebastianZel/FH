@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pizza</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h2><a href="#">Venezia's Pizzeria</a></h2>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#menu">Speisekarte</a></li>
+          <li><a href="#order">Online Bestellen</a></li>
+          <li><a href="#haus">Unser Restaurant</a></li>
+          <li><a href="#guest">Kundenmeinungen</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="hero">
+      <img
+        class="background-image"
+        src="assets/img/hero-640x427.jpg"
+        srcset="assets/img/hero-640x427.jpg 1x, assets/img/hero-1920x1280.jpg 2x, assets/img/hero-2400x1600.jpg 3x"
+        sizes="(max-width: 1000) 50vw, 100vw"
+        alt="Bild einer Pizza als Headerbild"
+      />
+      <h1>​3908 San Mateo Blvd NE</h1>
+      <h3>Die beste Pizza in Albuquerque</h3>
+      <a href="#order" class="btn">Online Bestellen</a>
+    </section>
+
+    <section class="menu" id="menu">
+      <h3 class="title">Speisekarte</h3>
+      <p>
+        Kommen Sie bei uns vorbei oder lassen Sie sich beliefern. Wir liefern
+        gratis in ganz Albuquerque.
+      </p>
+      <hr />
+
+      <ul class="grid">
+        <li class="small">
+          <img src="assets/img/salat-2400x1350.jpg"
+          srcset="assets/img/salat-600x337.jpg 600w,    assets/img/salat-1200x675.jpg 1200w,
+                  assets/img/salat-1800x1012.jpg 1000w, assets/img/salat-2400x1350.jpg 2400w"
+                  sizes="(max-width: 1000) 50vw, 100vw"
+          alt="Bild eines Salates"/>
+          
+          <div><span>Salat</span></div>
+        </li>
+        <li class="large">
+          <img src="assets/img/pizza-2400x1350.jpg" 
+          srcset="assets/img/pizza-600x337.jpg 600w,    assets/img/pizza-1200x675.jpg 1200w,
+                  assets/img/pizza-1800x1012.jpg 1000w, assets/img/pizza-2400x1350.jpg 2400w"
+          sizes="(max-width: 1000) 50vw, 100vw"
+          alt="Bild einer Pizza" />
+          <div><span>Pizzen</span></div>
+        </li>
+        <li class="large">
+          <img src="assets/img/eis-2400x1350.jpg" 
+          srcset="assets/img/eis-600x337.jpg 600w,    assets/img/eis-1200x675.jpg 1200w,
+                  assets/img/eis-1800x1012.jpg 1000w, assets/img/eis-2400x1350.jpg 2400w"
+                  sizes="(max-width: 1000) 50vw, 100vw"
+          alt="Bild eines Eises" />
+          <div><span>Eis</span></div>
+        </li>
+        <li class="small">
+          <img src="assets/img/kuchen-2400x1350.jpg"
+          srcset="assets/img/kuchen-600x337.jpg 600w,    assets/img/kuchen-1200x675.jpg 1200w,
+                  assets/img/kuchen-1800x1012.jpg 1000w, assets/img/kuchen-2400x1350.jpg 2400w"
+                  sizes="(max-width: 1000) 50vw, 100vw"
+          alt="Bild eines Kuchens" />
+          <div><span>Kuchen</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="features" id="order">
+      <h3 class="title">Online Bestellen</h3>
+
+      <form action="https://users.multimediatechnology.at/~bjelline/echo.php">
+        <ul class="flex-outer">
+          <li>
+            <label for="full-name" class="single-row">Name</label>
+            <input type="text" id="full-name" placeholder="Vorname Nachname" />
+          </li>
+          <li>
+            <label for="phone" class="single-row">Phone</label>
+            <input type="tel" id="phone" placeholder="Enter your phone here" />
+          </li>
+          <li>
+            <p>Lieferung?</p>
+            <ul class="flex-inner">
+              <li>
+                <label
+                  ><input type="radio" name="lieferung" value="ja" />
+                  Lieferung</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="lieferung" value="nein" />
+                  Abholung</label
+                >
+              </li>
+              <!-- more list items here -->
+              <li>
+                <p>Pizzen</p>
+                <div>
+                  <select id="next_pizza" name="next_pizza">
+                    <option value="" selected>--- bitte auswählen ---</option>
+            
+                    <option data-subtitle="Der Klassiker: Tomatensauce und Käse." 
+                            data-right="7,50€">Pizza  Margherita</option>
+            
+                    <option data-subtitle="Tomatensauce, Mozzarella, Vorderschinken, Sardellen, Oliven und Oregano." 
+                            data-right="9,50€">Pizza  Sicilia</option>
+            
+                    <option data-subtitle="Tomatensauce, Käse und Salami." 
+                            data-right="8,80€">Pizza  Salami</option>
+            
+                    <option data-subtitle="Tomatensauce, Käse, Tunfisch und Zwiebeln." 
+                            data-right="9,20€">Pizza Tonno</option>
+            
+                    <option data-subtitle="Tomatensauce, Käse, Peperoni-Salami, Paprika und scharfe Peperoni." 
+                            data-right="9,80€">Pizza  Diavolo</option>
+            
+                    <option data-subtitle="Tomatensauce, Käse und Spinat mit Knoblauch." 
+                            data-right="8,60€">Pizza  ai Spinaci</option>                                                         
+                  </select>
+                  <button id="add_next_pizza" >Pizza auswählen</button>
+                </div>
+            
+              </li>
+            </ul>
+          <li>
+            <label for="message">Message</label>
+            <textarea
+              rows="6"
+              id="message"
+              placeholder="Enter your message here"
+            ></textarea>
+          </li>
+          <li>
+            <button type="submit">Submit</button>
+          </li>
+        </ul>
+      </form>
+    </section>
+    <section id="haus">
+      <h3 class="title">Unser Restaurant</h3>
+      <p>
+        Unsere kleine aber feine Pizzeria war in den 1950er Zuhause von
+        berühmtesten Meth-Labor der Stadt. Die Substanzen haben wir entfernt,
+        der Charme aber bleibt.
+      </p>
+      <hr />
+      <img
+        src="assets/img/haus-2400x1600.jpg"
+        alt="Bild einer Pizzeria in den USA"
+      />
+    </section>
+
+    <section class="reviews" id="guest">
+      <div class="background-image"></div>
+
+      <div id="reviews-container">
+        <h3 class="title">Das sagen unsere Kunden</h3>
+        <p class="quote">
+          Ich freue mich immer so sehr auf die Pizza. Eure Pizza ist echt zum
+          Auf-Dächer-Werfen. Großer Respekt.
+        </p>
+        <p class="author">— Walter W.</p>
+
+        <p class="quote">
+          Letze Woche habe ich Haare auf meiner Pizza gefunden. Ich würde Sie
+          verklagen. Brauchen Sie einen Anwalt? Melden sie sich bei Saul
+          Goodman!
+        </p>
+        <p class="author">— Jimmy M.</p>
+
+        <p class="quote">
+          Nicht so gut wie Hühnchen aber trotzdem die beste Pizza weit und
+          breit!
+        </p>
+        <p class="author">— Gustavo F.</p>
+        <hr />
+      </div>
+    </section>
+
+    <section class="contact" id="newsletter">
+      <h3 class="title">Newsletter</h3>
+      <p>
+        Sie erhalten Informationen über unsere Veranstaltungen und
+        Sonderangebote einmal im Monat per e-Mail. Damit Sie keine Pizza mehr
+        versäumen!
+      </p>
+      <hr />
+
+      <form>
+        <input type="email" placeholder="Email" />
+        <a href="#" class="btn">Subscribe now</a>
+      </form>
+    </section>
+
+    <footer id="contact">
+      <h3>Kontakt</h3>
+      <ul>
+        <li>
+          <a
+            href="https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767"
+            ><i class="fa fa-twitter-square"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/"
+            ><i class="fa fa-facebook-square"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-snapchat-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-pinterest-square"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-github-square"></i></a>
+        </li>
+      </ul>
+      <p>
+        Bilderquellen:
+        <a href="https://unsplash.com/photos/T0ro5uYHAiw"
+          >Hero (Mariusz Słoński)</a
+        >,
+        <a href="https://unsplash.com/photos/gxyMHjutF1k"
+          >Restaurant (Damien Santos)</a
+        >
+        <a href="https://unsplash.com/photos/KRGFXJWIo2Y">Salat (I E)</a>
+        <a href="https://unsplash.com/photos/MQUqbmszGGM"
+          >Pizza (Ivan Torres)</a
+        >
+        <a href="https://unsplash.com/photos/X5u6snvBCf0">Eis (Mae Mu)</a>
+        <a href="https://unsplash.com/photos/ZYKCgsRz9Mg"
+          >Kuchen (Slashio Photography)</a
+        >
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      if (!window.jQuery) {
+        document.write(
+          '<script src="assets/js/jquery-3.2.1.min.js"><\/script>'
+        );
+      }
+    </script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+-- Imported City Data from
+-- http://bulk.openweathermap.org/sample/
+-- city.list.min.json.gz
+--
+-- result in cities.sql
+
+
+
+
+create temporary table temp_json (values text) ;
+
+copy temp_json from '/full/path/to/city.list.min.json';
+
+CREATE TABLE cities (
+    id serial,
+    name varchar(100),
+    country varchar(4),
+    location point
+);
+
+Insert into cities
+select 
+  (values->>'id')::integer as id, 
+  values->>'name' as name, 
+  values->'country'::text  as country, 
+  point( (values#>>'{coord,lon}')::float, (values#>>'{coord,lat}')::float )  as location
+from (
+  select 
+    json_array_elements(replace(values,'\','\\')::json) as values 
+  from  temp_json) a ;
+
+update cities set country = replace(country, '"', '');  
+
+
+drop table temp_json;

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        
+        <title>
+            Bestellung
+        </title>
+        <style>
+            form {
+            display: grid;
+            grid-template-columns: [labels] auto [controls]2fr;
+            grid-gap: 10px;
+            }
+            form>fieldset{
+                grid-area:span 2;
+            }
+            html{
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+                font-size: larger;
+            }
+            form>imput[type=submit]{
+                grid-column:controls;
+            }
+            select{
+                width: max-content;
+            }
+            body{
+                background-color: #f3c369;
+            }
+            .bildhintergrund{
+                background-image: url("Burger_with_fried_onions_and_Frensh_fries_3.jpg");
+                background-color: white;
+                width: 1500px;
+                height: 999px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: auto;
+            }
+            .inhaltkasten{
+                width: 700px;
+                height: 799px;
+                margin: auto;
+                padding-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bildhintergrund">
+            <div class="inhaltkasten">
+        <h1>Stellen Sie Ihren Burger zusammen:</h1>
+        <form>
+            <label>Brot:</label>
+            <select name="brot">
+                <option>Regulär</option>
+                <option>Glutenfrei</option>
+                <option>Vollkorn</option>
+            </select>
+            <label>Patty</label>
+            <select name="patty">
+                <option>Burgerpatty mit Rindfleisch</option>
+                <option>Veggie-Patty</option>
+                <option>paniertes Fischfilet</option>
+            </select>
+            <label>Inhalt</label>
+            <label> </label>
+            <label>Yelper</label>
+            <input type="checkbox" name="Yelper">
+            <label>Käse</label>
+            <input type="checkbox" name="käse">
+            <label>Essiggurke</label> 
+            <input type="checkbox" name="essiggurke">
+            <label>Paprika</label>
+            <input type="checkbox" name="Paprika">
+            <label>Speckstreifen</label>
+            <input type="checkbox" name="speck"></form>
+        <h2>Abholdaten:</h2>
+        
+        <form action='mail.php' method='get'>
+        <label>Vorname</label>
+            
+            <input type="text" name="vorname" placeholder="Vorname" required>
+            
+            <label>Nachname</label>
+            
+                <input type="text" name="nachname" placeholder="Nachname" required>
+            
+            <label>E-Mail-Adresse</label>
+            
+            <input type="text" name="email" placeholder="fhsXXXXX@fh-salzburg.ac.at" required pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$">
+            
+            <label>Zusatzanweisungen</label>
+            
+                <textarea name="message" rows="5" cols="50"></textarea>
+            <input type="submit" name="Bestellung Absenden">
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

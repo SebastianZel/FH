@@ -1,0 +1,5 @@
+digraph {
+a -> b [weight=12];
+b -> c [weight=2];
+d -> e [weight=1];
+}

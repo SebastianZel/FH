@@ -1,0 +1,42 @@
+POST
+Antwort:
+<!DOCTYPE html>
+Datei erfolgreich hochgeladen.
+<pre>debugging info:Array
+(
+    [bild] => Array
+        (
+            [name] => happy.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpLdK9C1
+            [error] => 0
+            [size] => 10868
+        )
+
+)
+</pre>
+Timing
+Started at 6.71
+Request URL: https://users.multimediatechnology.at/~fhs47843/ordner-auflisten/upload.php
+Status Code: 200 OK
+Vary: Accept-Encoding
+
+Get
+Referrer Policy: strict-origin-when-cross-origin
+Antwort
+<!DOCTYPE html>
+Datei erfolgreich hochgeladen.
+<pre>debugging info:Array
+(
+    [bild] => Array
+        (
+            [name] => happy.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/phpePCTzO
+            [error] => 0
+            [size] => 10868
+        )
+
+)
+</pre>
+started at 6.89
